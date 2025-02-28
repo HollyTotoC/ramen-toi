@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ramen
+* source:	https://sketchfab.com/3d-models/ramen-e9ac93f7e0184f389c9d2da712ee5620
+* author:	Qiu_Ryzu (https://sketchfab.com/Qiu_Ryzu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ramen" (https://sketchfab.com/3d-models/ramen-e9ac93f7e0184f389c9d2da712ee5620) by Qiu_Ryzu (https://sketchfab.com/Qiu_Ryzu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

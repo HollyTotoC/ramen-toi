@@ -1,0 +1,11 @@
+Model Information:
+* title:	Japanese Ramen
+* source:	https://sketchfab.com/3d-models/japanese-ramen-f65a8eab51794fbc8c7941101a354a54
+* author:	Senkinsky (https://sketchfab.com/senkinsky)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Japanese Ramen" (https://sketchfab.com/3d-models/japanese-ramen-f65a8eab51794fbc8c7941101a354a54) by Senkinsky (https://sketchfab.com/senkinsky) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
