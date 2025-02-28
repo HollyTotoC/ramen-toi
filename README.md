@@ -1,54 +1,84 @@
-# React + TypeScript + Vite
+# 🍜 Ramen Invitation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est une application React qui invite les utilisateurs à aller manger des ramen. L'application utilise plusieurs technologies modernes pour offrir une expérience utilisateur interactive et engageante.
 
-Currently, two official plugins are available:
+## ✨ Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🎉 Bouton "Yes" avec Confetti** : Lorsque l'utilisateur clique sur "Yes", des confettis apparaissent et une modale s'ouvre après un délai de 3 secondes.
+- **🚫 Bouton "No" qui se déplace** : Le bouton "No" se déplace aléatoirement lorsque l'utilisateur essaie de cliquer dessus.
+- **📅 Modale avec formulaire** : La modale permet à l'utilisateur de choisir une date et une heure pour aller manger des ramen.
+- **📤 Partage natif** : Le formulaire utilise l'API de partage natif pour envoyer les détails de l'invitation via les applications de messagerie disponibles sur l'appareil de l'utilisateur.
+- **🖼️ Modèles 3D** : L'application affiche des modèles 3D de ramen et de bol de ramen en utilisant Three.js et React Three Fiber.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Utilisées
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** : Bibliothèque JavaScript pour construire des interfaces utilisateur.
+- **TypeScript** : Superset de JavaScript qui ajoute des types statiques.
+- **Vite** : Outil de build rapide pour les projets front-end modernes.
+- **Tailwind CSS** : Framework CSS utilitaire pour un développement rapide et réactif.
+- **Three.js** : Bibliothèque JavaScript pour créer et afficher des graphiques 3D dans le navigateur.
+- **React Three Fiber** : Liaison React pour Three.js.
+- **shadcn/ui** : Composants UI pour React.
+- **date-fns** : Bibliothèque pour manipuler les dates en JavaScript.
+- **react-confetti** : Composant React pour afficher des confettis.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Installation
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/votre-utilisateur/ramen-invitation-app.git
+   ```
+2. Accédez au répertoire du projet :
+   ```bash
+   cd ramen-invitation-app
+   ```
+3. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+4. Démarrez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+
+## 📂 Structure du Projet
+
+```plaintext
+├── public
+│   ├── assets
+│   │   ├── bg.jpg
+│   │   ├── ramen
+│   │   │   └── scene.gltf
+│   │   └── bowl
+│   │       └── scene.gltf
+├── src
+│   ├── components
+│   │   ├── 3dBowl.tsx
+│   │   ├── 3dRamen.tsx
+│   │   ├── ConfettiComponent.tsx
+│   │   ├── FormComponent.tsx
+│   │   ├── NoButton.tsx
+│   │   └── ui
+│   │       ├── button.tsx
+│   │       ├── dialog.tsx
+│   │       ├── input.tsx
+│   │       └── label.tsx
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Utilisation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **🎉 Bouton "Yes"** : Cliquez sur le bouton "Yes" pour afficher des confettis et ouvrir la modale après un délai de 3 secondes.
+- **🚫 Bouton "No"** : Essayez de cliquer sur le bouton "No" pour le voir se déplacer aléatoirement.
+- **📅 Formulaire** : Remplissez le formulaire dans la modale pour choisir une date et une heure, puis soumettez-le pour partager l'invitation via les applications de messagerie disponibles.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! Veuillez ouvrir une issue ou soumettre une pull request pour toute amélioration ou correction de bug.
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
