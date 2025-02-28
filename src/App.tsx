@@ -19,16 +19,19 @@ function App() {
     const [isMoved, setIsMoved] = useState(false);
     const [showConfetti, setShowConfetti] = useState(false);
     const [showDialog, setShowDialog] = useState(false);
+    const [showNoButton, setShowNoButton] = useState(true);
 
     const handleYesClick = () => {
         setShowConfetti(true);
+        setShowNoButton(false);
+        setIsMoved(false);
         setTimeout(() => {
             setShowDialog(true);
-        }, 3000); // 5 secondes de délai
+        }, 3000); // 3 secondes de délai
     };
 
     return (
-        <div className="relative flex items-center justify-center h-screen w-screen" style={{ backgroundImage: "url('/assets/bg.jpg')", backgroundSize: "cover" }}>
+        <div className="relative flex items-center justify-center h-[100dvh] w-[100dvw]" style={{ backgroundImage: "url('/assets/bg.jpg')", backgroundSize: "cover" }}>
             <ConfettiComponent showConfetti={showConfetti} />
             <div className="bg-white p-10 rounded-xl shadow-2xl text-center mx-4 max-w-md relative overflow-hidden">
                 <ThreeDRamen />
@@ -41,7 +44,10 @@ function App() {
                     </Button>
                     <Dialog open={showDialog} onOpenChange={(open) => {
                         setShowDialog(open);
-                        if (!open) setShowConfetti(false);
+                        if (!open) {
+                            setShowConfetti(false);
+                            setShowNoButton(true);
+                        }
                     }}>
                         <DialogContent>
                             <DialogHeader>
@@ -52,10 +58,9 @@ function App() {
                                 <BowlRamen />
                             </DialogHeader>
                             <FormComponent />
-
                         </DialogContent>
                     </Dialog>
-                    <NoButton setIsMoved={setIsMoved} isMoved={isMoved} />
+                    {showNoButton && <NoButton setIsMoved={setIsMoved} isMoved={isMoved} />}
                 </div>
             </div>
         </div>
